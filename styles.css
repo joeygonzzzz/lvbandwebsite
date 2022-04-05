@@ -203,7 +203,7 @@
     background: #141414;
 }
 
-.main_container{
+.main__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -218,7 +218,7 @@
 }
 
 .main__content h1 {
-    font-size: 4rem;
+    font-size: 2rem;
     background-color: royalblue;
     background-image: linear-gradient(to top, royalblue 0%, white);
     background-size: 100%;
@@ -229,7 +229,7 @@
 }
 
 .main__content h2 {
-    font-size: 4rem;
+    font-size: 1.5rem;
     background-color: royalblue;
     background-image: linear-gradient(to top, white 0%, royalblue);
     background-size: 100%;
@@ -240,7 +240,213 @@
 }
 
 .main__content p {
-    margin-top: 1rem;
-    font-size: 2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
     font-weight: 700;
+    color: white;
 }
+
+.main__btn{
+    font-size: 1rem;
+    background-image: linear-gradient(to top, royalblue 0%, white 100% );
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main__btn a{
+    position: relative;
+    z-index: 2;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.main__btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #4837ff;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn:hover {
+    color: #fff;
+}
+
+.main__btn:hover:after{
+    width: 100%;
+}
+
+.main__img--container{
+    text-align: center;
+}
+
+#main-img{
+    height: 80%;
+    width: 80%;
+}
+
+/*Mobile responsive*/
+
+@media screen and (max-width: 768px) {
+    .main_container{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .main__content{
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .main__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .main__content h2 {
+        font-size: 3rem;
+    }
+
+    .main_content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main__content h1{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .main__content h2{
+        font-size: 2rem;
+    }
+
+    .main__content p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .main__btn{
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+}
+
+/*Directors*/
+.directors{
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.directors h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, royalblue 0%, white);
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.directors__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.directors__card{
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('/images/lvband1.jpeg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.directors__card:nth-child(2){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url('/images/lvband2.jpeg');
+}
+
+.directors h2{
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.directors__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.directors__card button{
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: royalblue;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.directors__card:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .directors{
+        height: 1600px;
+    }
+
+    .directors h1{
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .directors{
+        height: 1400px;
+    }
+
+    .directors h1{
+        font-size: 1.2rem;
+    }
+
+    .directors__card{
+        width: 300px;
+    }
+}
+
+/*footer css*/
