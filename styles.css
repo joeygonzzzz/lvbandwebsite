@@ -459,6 +459,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 0%;
 }
 
 #footer__logo{
