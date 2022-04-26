@@ -638,3 +638,8 @@
     position: relative;
     color: #fff;
 }
+
+#calendar{
+    display: inline-flex;
+    padding-left: 300px;
+}
