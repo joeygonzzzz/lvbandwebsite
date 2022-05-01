@@ -217,20 +217,6 @@
     padding: 0 50px;
 }
 
-.main__contact{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-self: center;
-    margin: 0 auto;
-    height: 90vh;
-    background-color: #141414;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
-}
-
 .main__content h1 {
     font-size: 2rem;
     background-color: royalblue;
@@ -656,4 +642,44 @@
 #calendar{
     display: inline-flex;
     padding-left: 300px;
+}
+
+/* contact css */
+
+.main__contact{
+    background: #141414;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.main__contactcontainer{
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.main__contactcontent h1{
+    font-size: 2rem;
+    background-color: royalblue;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 80px;
+}
+
+.main__contactcontent h2{
+    font-size: 1.5rem;
+    background-color: white;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 30px;
 }
